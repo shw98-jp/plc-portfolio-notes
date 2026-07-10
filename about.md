@@ -22,10 +22,24 @@ permalink: /about/
     <ul>
       <li>韓国の4年制大学でソフトウェアを専攻</li>
       <li>ITセキュリティ・インフラ分野で約1年半の実務経験</li>
+      <li>2018年に入隊し、レバノン国連平和維持活動（UNIFIL）に派遣</li>
+      <li>2020年に除隊</li>
+      <li>2026年1月から東京在住</li>
       <li>2026年度上期 第二種電気工事士 筆記試験に合格、技能試験対策中</li>
       <li>Mitsubishi PLC / GX Works2・GX Works3を学習中</li>
     </ul>
-    <a class="about-mail" href="mailto:sywok19980331@gmail.com">sywok19980331@gmail.com</a>
+    <div class="about-contact-card">
+      <span class="about-contact-label">Links</span>
+      <a class="about-contact-link" href="https://github.com/shw98-jp" target="_blank" rel="noopener noreferrer">
+        <span>GitHub</span>
+        <strong>github.com/shw98-jp</strong>
+      </a>
+      <a class="about-contact-link" href="mailto:sywok19980331@gmail.com">
+        <span>Email</span>
+        <strong>sywok19980331@gmail.com</strong>
+      </a>
+      <p>ポートフォリオ・学習内容に関するご連絡はこちらへお願いいたします。</p>
+    </div>
   </div>
 </div>
 
@@ -37,7 +51,9 @@ permalink: /about/
 
 私は韓国出身で、韓国の4年制大学でソフトウェアを専攻しました。前職では、韓国のITセキュリティ・インフラ分野で約1年半、インフラ監視、障害対応、ログ確認、セキュリティイベントの一次対応などを経験しました。
 
-現在は日本で生活しながら、第二種電気工事士の学習と、Mitsubishi PLC / GX Works2・GX Works3を使ったPLCプログラミングの学習を進めています。
+また、2018年に入隊し、レバノン国連平和維持活動（UNIFIL）に派遣され、2020年に除隊しました。
+
+2026年1月から東京で生活しながら、第二種電気工事士の学習と、Mitsubishi PLC / GX Works2・GX Works3を使ったPLCプログラミングの学習を進めています。
 
 2026年度上期の第二種電気工事士 筆記試験に合格し、現在は技能試験に向けて準備を進めています。特に、ラダー図、I/Oリスト、自己保持回路、インターロック、アラーム処理など、FA制御の基礎を中心に学習しています。
 
