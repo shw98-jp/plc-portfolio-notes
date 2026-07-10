@@ -8,7 +8,7 @@ title: PLC Portfolio Notes
   <h1>PLC Portfolio Notes</h1>
   <p>PLC・ラダー・FA制御に関する学習内容と実習記録をまとめたポートフォリオです。</p>
   <p>基礎理論だけでなく、実際の設備制御で必要となる考え方や問題解決の過程を記録します。</p>
-  <p>日本の製造・自動化現場で活用できる技術力を身につけることを目標としています。</p>
+  <p>日本の製造・自動化の現場で活用できる技術力を身につけることを目標としています。</p>
 </section>
 
 <section class="focus-grid" aria-label="Portfolio sections">
@@ -25,6 +25,6 @@ title: PLC Portfolio Notes
   <a class="focus-card" href="{{ '/automation-programs/' | relative_url }}">
     <span>03</span>
     <h2>Automation Programs</h2>
-    <p>自動化に関するプログラムと制作物を記録します。</p>
+    <p>自動化に関するプログラムや制作物を記録します。</p>
   </a>
 </section>

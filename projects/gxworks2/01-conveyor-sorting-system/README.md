@@ -1,6 +1,6 @@
 # Conveyor Product Sorting System
 
-GX Works2で作成した、金属・非金属製品の仕分けコンベヤシステムです。
+GX Works2で作成した、金属・非金属製品の仕分けコンベアシステムです。
 
 ## Project File
 
