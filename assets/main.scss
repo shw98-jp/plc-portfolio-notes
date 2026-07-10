@@ -1,0 +1,146 @@
+---
+---
+
+@import "minima";
+
+:root {
+  --bg: #0e1117;
+  --panel: #161b22;
+  --panel-soft: #1f2937;
+  --text: #e6edf3;
+  --muted: #9da7b3;
+  --line: #30363d;
+  --accent: #58a6ff;
+  --accent-soft: rgba(88, 166, 255, 0.14);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.site-header {
+  background: #0b0f14;
+  border-top: 4px solid var(--accent);
+  border-bottom: 1px solid var(--line);
+}
+
+.site-title,
+.site-title:visited,
+.site-nav .page-link,
+.post-link,
+a {
+  color: var(--accent);
+}
+
+.site-nav {
+  background: #0b0f14;
+  border-color: var(--line);
+}
+
+.page-content {
+  background: radial-gradient(circle at top right, rgba(88, 166, 255, 0.12), transparent 34%), var(--bg);
+}
+
+.wrapper {
+  max-width: 1040px;
+}
+
+.hero-panel {
+  padding: 40px 0 34px;
+  border-bottom: 1px solid var(--line);
+}
+
+.hero-panel .eyebrow {
+  margin-bottom: 10px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.hero-panel h1 {
+  margin-bottom: 18px;
+  color: var(--text);
+  font-size: clamp(36px, 7vw, 64px);
+  line-height: 1.05;
+}
+
+.hero-panel p {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 30px 0 42px;
+}
+
+.focus-grid div {
+  min-height: 156px;
+  padding: 22px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.focus-grid span {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.focus-grid h2 {
+  margin-bottom: 10px;
+  color: var(--text);
+  font-size: 19px;
+}
+
+.focus-grid p,
+.post-meta,
+.footer-col-wrapper,
+.site-footer {
+  color: var(--muted);
+}
+
+.post-list > li {
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-title,
+.page-heading {
+  color: var(--text);
+}
+
+pre,
+code {
+  background: var(--panel-soft);
+  border-color: var(--line);
+  color: var(--text);
+}
+
+.site-footer {
+  background: #0b0f14;
+  border-top: 1px solid var(--line);
+}
+
+@media screen and (max-width: 720px) {
+  .hero-panel {
+    padding-top: 28px;
+  }
+
+  .focus-grid {
+    grid-template-columns: 1fr;
+  }
+}
