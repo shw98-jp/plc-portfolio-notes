@@ -428,3 +428,23 @@ a:visited:hover,
   text-decoration: underline;
   text-underline-offset: 4px;
 }
+.article-image {
+  margin: 20px 0 30px;
+  overflow: hidden;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.article-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #0f141c;
+}
+
+.article-image figcaption {
+  padding: 10px 12px;
+  color: var(--muted);
+  font-size: 14px;
+}
