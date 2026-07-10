@@ -4,6 +4,12 @@ title: Conveyor Product Sorting System
 permalink: /system-design/conveyor-sorting-system/
 ---
 
+{%- if site.github.build_revision -%}
+  {%- assign page_cache_bust = site.github.build_revision -%}
+{%- else -%}
+  {%- assign page_cache_bust = site.time | date: "%s" -%}
+{%- endif -%}
+
 <p class="project-kicker">GX Works2 / PLC System Design</p>
 
 # Conveyor Product Sorting System
@@ -110,7 +116,7 @@ M0 ON
    ↓
 M0 自己保持</code></pre>
       <figure class="article-image">
-        <img src="{{ '/assets/images/system-design/01-conveyor-sorting-system/01_run_self_hold.png' | relative_url }}" alt="運転開始および自己保持回路">
+        <img src="{{ '/assets/images/system-design/01-conveyor-sorting-system/01_run_self_hold.png' | relative_url }}?v={{ page_cache_bust }}" alt="運転開始および自己保持回路">
         <figcaption>01. 運転開始および自己保持回路</figcaption>
       </figure>
     </div>
@@ -134,7 +140,7 @@ Y0 OFF
    ↓
 コンベヤ停止</code></pre>
       <figure class="article-image">
-        <img src="{{ '/assets/images/system-design/01-conveyor-sorting-system/02_conveyor_motor_control.png' | relative_url }}" alt="コンベヤモータ制御回路">
+        <img src="{{ '/assets/images/system-design/01-conveyor-sorting-system/02_conveyor_motor_control.png' | relative_url }}?v={{ page_cache_bust }}" alt="コンベヤモータ制御回路">
         <figcaption>02. コンベヤモータ制御回路</figcaption>
       </figure>
     </div>
@@ -152,7 +158,7 @@ SET M10</code></pre>
       <p>製品がX3センサを通過してX3がOFFになっても、M10はON状態を維持します。</p>
       <p>M10は、現在搬送中の製品が金属製品であるという判定結果を保持します。</p>
       <figure class="article-image">
-        <img src="{{ '/assets/images/system-design/01-conveyor-sorting-system/03_metal_detection.png' | relative_url }}" alt="金属製品の判定結果保持回路">
+        <img src="{{ '/assets/images/system-design/01-conveyor-sorting-system/03_metal_detection.png' | relative_url }}?v={{ page_cache_bust }}" alt="金属製品の判定結果保持回路">
         <figcaption>03. 金属製品の判定結果保持回路</figcaption>
       </figure>
     </div>
@@ -188,7 +194,7 @@ Y2 ON
    ↓
 Bボックスへ仕分け</code></pre>
       <figure class="article-image">
-        <img src="{{ '/assets/images/system-design/01-conveyor-sorting-system/04_product_sorting.png' | relative_url }}" alt="金属・非金属製品仕分け回路">
+        <img src="{{ '/assets/images/system-design/01-conveyor-sorting-system/04_product_sorting.png' | relative_url }}?v={{ page_cache_bust }}" alt="金属・非金属製品仕分け回路">
         <figcaption>04. 金属・非金属製品仕分け回路</figcaption>
       </figure>
     </div>
@@ -205,7 +211,7 @@ X4 ON
 SET M20</code></pre>
       <p>M20は、製品が仕分け位置に到着し、仕分け作業が開始されたことを保持する内部デバイスです。</p>
       <figure class="article-image">
-        <img src="{{ '/assets/images/system-design/01-conveyor-sorting-system/05_sorting_active.png' | relative_url }}" alt="仕分け作業中状態保持回路">
+        <img src="{{ '/assets/images/system-design/01-conveyor-sorting-system/05_sorting_active.png' | relative_url }}?v={{ page_cache_bust }}" alt="仕分け作業中状態保持回路">
         <figcaption>05. 仕分け作業中状態保持回路</figcaption>
       </figure>
     </div>
@@ -229,7 +235,7 @@ RST M20</code></pre>
       </ul>
       <p>初期化が完了すると、X4がOFF状態であるためY0が再びONになり、コンベヤが再運転します。</p>
       <figure class="article-image">
-        <img src="{{ '/assets/images/system-design/01-conveyor-sorting-system/06_sorting_reset.png' | relative_url }}" alt="仕分け完了および状態初期化回路">
+        <img src="{{ '/assets/images/system-design/01-conveyor-sorting-system/06_sorting_reset.png' | relative_url }}?v={{ page_cache_bust }}" alt="仕分け完了および状態初期化回路">
         <figcaption>06. 仕分け完了および状態初期化回路</figcaption>
       </figure>
     </div>
