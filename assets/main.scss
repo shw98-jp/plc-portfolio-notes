@@ -410,3 +410,21 @@ code {
   border-color: var(--accent);
   text-decoration: none;
 }
+/* Keep links readable on dark hover states */
+a:hover,
+a:focus,
+a:visited:hover,
+.post-link:hover,
+.post-link:focus,
+.site-title:hover,
+.site-nav .page-link:hover,
+.site-footer a:hover {
+  color: #8cc8ff;
+  text-decoration-color: rgba(140, 200, 255, 0.72);
+}
+
+.post-list .post-link:hover {
+  color: #b7dcff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
