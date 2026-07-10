@@ -159,3 +159,134 @@ code {
     grid-template-columns: 1fr;
   }
 }
+.project-list {
+  display: grid;
+  gap: 16px;
+  margin: 24px 0 40px;
+}
+
+.project-card {
+  display: block;
+  padding: 24px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--muted);
+  text-decoration: none;
+  transition: border-color 160ms ease, transform 160ms ease, background 160ms ease;
+}
+
+.project-card:hover {
+  background: var(--panel-soft);
+  border-color: var(--accent);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.project-card h2 {
+  margin: 6px 0 10px;
+  color: var(--text);
+  font-size: 24px;
+}
+
+.project-card ul {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.project-kicker {
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.summary-panel {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 24px 0 32px;
+}
+
+.summary-panel div {
+  padding: 18px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.summary-panel span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.summary-panel p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.flow-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0 30px;
+}
+
+.flow-strip span {
+  padding: 8px 12px;
+  background: var(--accent-soft);
+  border: 1px solid rgba(88, 166, 255, 0.28);
+  border-radius: 999px;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.io-table {
+  display: table;
+  width: 100%;
+  margin: 16px 0 30px;
+  border-collapse: collapse;
+  color: var(--muted);
+}
+
+.io-table th,
+.io-table td {
+  padding: 12px;
+  border: 1px solid var(--line);
+}
+
+.io-table th {
+  background: var(--panel-soft);
+  color: var(--text);
+  font-weight: 700;
+}
+
+.compact-list,
+.status-list {
+  margin: 14px 0 30px;
+  color: var(--muted);
+}
+
+.compact-list strong {
+  color: var(--text);
+}
+
+.status-list li::marker {
+  color: var(--accent);
+}
+
+@media screen and (max-width: 720px) {
+  .summary-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .io-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
