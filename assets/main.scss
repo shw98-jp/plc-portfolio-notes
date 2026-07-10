@@ -290,3 +290,36 @@ code {
     overflow-x: auto;
   }
 }
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 18px 0 34px;
+}
+
+.image-grid figure {
+  margin: 0;
+  overflow: hidden;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.image-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+}
+
+.image-grid figcaption {
+  padding: 10px 12px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+@media screen and (max-width: 720px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+}
