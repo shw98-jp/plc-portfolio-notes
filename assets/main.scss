@@ -783,3 +783,22 @@ a:visited:hover,
     grid-template-columns: 1fr;
   }
 }
+.external-link-label {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 18px;
+  min-height: 34px;
+  padding: 0 12px;
+  background: var(--accent-soft);
+  border: 1px solid rgba(88, 166, 255, 0.34);
+  border-radius: 999px;
+  color: #b7dcff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.external-card:hover .external-link-label {
+  background: rgba(88, 166, 255, 0.22);
+  border-color: var(--accent);
+  color: var(--text);
+}
