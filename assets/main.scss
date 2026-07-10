@@ -730,3 +730,56 @@ a:visited:hover,
     grid-template-columns: 1fr;
   }
 }
+/* Theory article components */
+.theory-overview {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 24px 0 34px;
+}
+
+.theory-overview div {
+  padding: 18px;
+  background: linear-gradient(180deg, #111923, #0f151d);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.theory-overview span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.theory-overview p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.scan-cycle {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin: 18px 0 28px;
+}
+
+.scan-cycle span {
+  position: relative;
+  padding: 14px 12px;
+  background: var(--accent-soft);
+  border: 1px solid rgba(88, 166, 255, 0.32);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+  .theory-overview,
+  .scan-cycle {
+    grid-template-columns: 1fr;
+  }
+}
