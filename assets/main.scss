@@ -81,15 +81,26 @@ a {
   margin: 30px 0 42px;
 }
 
-.focus-grid div {
+.focus-card {
+  display: block;
   min-height: 156px;
   padding: 22px;
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 8px;
+  color: var(--muted);
+  text-decoration: none;
+  transition: border-color 160ms ease, transform 160ms ease, background 160ms ease;
 }
 
-.focus-grid span {
+.focus-card:hover {
+  background: var(--panel-soft);
+  border-color: var(--accent);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.focus-card span {
   display: inline-block;
   margin-bottom: 14px;
   color: var(--accent);
@@ -97,13 +108,13 @@ a {
   font-weight: 700;
 }
 
-.focus-grid h2 {
+.focus-card h2 {
   margin-bottom: 10px;
   color: var(--text);
   font-size: 19px;
 }
 
-.focus-grid p,
+.focus-card p,
 .post-meta,
 .footer-col-wrapper,
 .site-footer {
@@ -121,6 +132,10 @@ a {
 .post-title,
 .page-heading {
   color: var(--text);
+}
+
+.post-content ul {
+  color: var(--muted);
 }
 
 pre,

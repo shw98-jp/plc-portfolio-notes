@@ -6,3 +6,9 @@ url: "https://shw98-jp.github.io"
 baseurl: "/plc-portfolio-notes"
 lang: ja
 timezone: Asia/Tokyo
+
+header_pages:
+  - theory.md
+  - system-design.md
+  - automation-programs.md
+  - about.md

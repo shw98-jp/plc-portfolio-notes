@@ -11,20 +11,20 @@ title: PLC Portfolio Notes
   <p>日本の製造・自動化現場で活用できる技術力を身につけることを目標としています。</p>
 </section>
 
-<section class="focus-grid" aria-label="Study focus">
-  <div>
+<section class="focus-grid" aria-label="Portfolio sections">
+  <a class="focus-card" href="{{ '/theory/' | relative_url }}">
     <span>01</span>
-    <h2>PLC Basic</h2>
-    <p>PLCの基礎と入出力の考え方を整理します。</p>
-  </div>
-  <div>
+    <h2>Theory</h2>
+    <p>PLC・ラダー・FA制御の基礎理論を整理します。</p>
+  </a>
+  <a class="focus-card" href="{{ '/system-design/' | relative_url }}">
     <span>02</span>
-    <h2>Ladder Logic</h2>
-    <p>ラダー回路の構成と動作を記録します。</p>
-  </div>
-  <div>
+    <h2>System Design</h2>
+    <p>設備制御の構成や設計の考え方をまとめます。</p>
+  </a>
+  <a class="focus-card" href="{{ '/automation-programs/' | relative_url }}">
     <span>03</span>
-    <h2>FA Control</h2>
-    <p>設備制御で必要な考え方をまとめます。</p>
-  </div>
+    <h2>Automation Programs</h2>
+    <p>自動化に関するプログラムと制作物を記録します。</p>
+  </a>
 </section>
