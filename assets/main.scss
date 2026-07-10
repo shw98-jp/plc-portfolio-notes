@@ -802,3 +802,125 @@ a:visited:hover,
   border-color: var(--accent);
   color: var(--text);
 }
+/* Footer and About page */
+.site-footer {
+  padding: 34px 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.footer-heading {
+  margin-bottom: 14px;
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.footer-brand p,
+.footer-contact p {
+  margin-bottom: 8px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.footer-contact {
+  justify-self: end;
+  min-width: 260px;
+}
+
+.footer-label {
+  color: var(--accent) !important;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer-contact a {
+  color: #b7dcff;
+  font-weight: 700;
+}
+
+.about-profile {
+  display: grid;
+  grid-template-columns: minmax(260px, 380px) minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+  margin: 24px 0 38px;
+}
+
+.about-photo {
+  margin: 0;
+  overflow: hidden;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.about-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center;
+  background: #0f141c;
+}
+
+.about-photo figcaption {
+  padding: 10px 12px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.about-summary {
+  padding: 24px;
+  background: linear-gradient(180deg, #111923, #0f151d);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.about-summary h2 {
+  margin-top: 0;
+  color: var(--text);
+  font-size: 28px;
+}
+
+.about-summary ul {
+  margin: 18px 0 22px;
+  color: var(--muted);
+}
+
+.about-mail {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 12px;
+  background: var(--accent-soft);
+  border: 1px solid rgba(88, 166, 255, 0.34);
+  border-radius: 999px;
+  color: #b7dcff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.about-mail:hover {
+  background: rgba(88, 166, 255, 0.22);
+  color: var(--text);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 720px) {
+  .footer-grid,
+  .about-profile {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-contact {
+    justify-self: start;
+    min-width: 0;
+  }
+}
