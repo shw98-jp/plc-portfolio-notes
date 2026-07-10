@@ -4,11 +4,7 @@ title: Conveyor Product Sorting System
 permalink: /system-design/conveyor-sorting-system/
 ---
 
-{%- if site.github.build_revision -%}
-  {%- assign page_cache_bust = site.github.build_revision -%}
-{%- else -%}
-  {%- assign page_cache_bust = site.time | date: "%s" -%}
-{%- endif -%}
+{%- assign page_cache_bust = site.time | date: "%s" -%}
 
 <p class="project-kicker">GX Works2 / PLC System Design</p>
 
