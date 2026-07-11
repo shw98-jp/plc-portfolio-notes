@@ -27,4 +27,14 @@ PLC・ラダー・FA制御に関する基礎理論を整理します。
       <li>スタート・停止時の動作確認</li>
     </ul>
   </a>
+  <a class="project-card" href="{{ '/theory/internal-devices/' | relative_url }}">
+    <p class="project-kicker">PLC Basic / Internal Devices</p>
+    <h2>PLC Internal Devices</h2>
+    <p>PLC内部で使うMリレーとLリレーの役割、共通点、使い分けを整理します。</p>
+    <ul>
+      <li>M：補助リレーの使い方</li>
+      <li>L：ラッチリレーの使い方</li>
+      <li>自動ドアと看板照明の制御例</li>
+    </ul>
+  </a>
 </div>
